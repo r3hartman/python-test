@@ -6,9 +6,7 @@ def fizzBuzz(tested):
     elif tested % 5 == 0:
         return True
     return False
-if fizzBuzz(5):
-    print "this is good"
-if fizzBuzz(3):
-    print "this is good"
-if fizzBuzz(15):
-    print "this is bad"
+if fizzBuzz(input("Enter a number: ")):
+    print "This number is divisible by three or five, but not both"
+else:
+    print "This number is divisible by neither three nor five, or both."
